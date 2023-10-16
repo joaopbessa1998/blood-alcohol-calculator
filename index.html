@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol Percentage Calculator</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <section id="sectionOne">
+        <div id="title">
+            <h1>Alcohol Percentage Calculator</h1>
+        </div>
+        <form id="content">
+            <div>
+                <label>Volume ingested (ml)</label>
+                <input type="number" placeholder="330" name="volume" id="volume" />
+            </div>
+            <div>
+                <label>Percentage of alcohol in the drink (%)</label>
+                <input type="number" placeholder="5" name="percentagem" id="percentagem" />
+            </div>
+            <div>
+                <label>Weight (kg)</label>
+                <input type="number" placeholder="75kg" name="peso" id="peso" />
+            </div>
+            <div id="genders">
+                <div id="genders_title">
+                    <p>Which one are you?</p>
+                </div>
+                <div id="genders_content">
+                    <div id="genders_content_male">
+                        <input type="radio" name="gender" id="male" value="male" checked="checked" />
+                        <label for="male">Male</label>
+                    </div>
+                    <div id="genders_content_female">
+                        <input type="radio" name="gender" value="female" id="female" />
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div id="drive">
+                <div id="drive_title">
+                    <p>Will you going to drive?</p>
+                </div>
+                <div id="drive_content">
+                    <div id="drive_content_yes">
+                        <input type="radio" name="drive" id="driveY" value="driveY" checked="checked" />
+                        <label for="driveY">Yes, I will</label>
+                    </div>
+                    <div id="drive_content_no">
+                        <input type="radio" name="drive" id="driveN" value="driveN" />
+                        <label for="driveN">No, I will not</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Calculate" onclick="Calcular()">
+            </div>
+            <div id="result"></div>
+        </form>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>
